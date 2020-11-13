@@ -269,7 +269,7 @@ namespace ₿ {
       string exchange,   apikey,    secret, pass,
              base,       quote,     symbol,
              http,       ws,        fix,
-             webMarket,  webOrders, unlock;
+             webMarket,  webOrders;
        Price tickPrice = 0;
       Amount tickSize  = 0,
              minSize   = 0,
@@ -379,22 +379,7 @@ namespace ₿ {
         else                   result += "very bad; move to another server/network";
         print(result);
       };
-      void disclaimer() const {
-        if (unlock.empty()) return;
-        print("was slowdown 7 seconds (--free-version argument was implicitly set):"
-          "\n" "\n" "Your apikey: " + apikey +
-          "\n" "\n" "To unlock it anonymously and to collaborate with"
-          "\n"      "the development, make an acceptable Pull Request"
-          "\n"      "on github.. or send 0.01210000 BTC (or more) to:"
-          "\n" "\n" "  " + unlock +
-          "\n" "\n" "Before restart just wait for 0 confirmations at:"
-          "\n"      "https://live.blockcypher.com/btc/address/" + unlock +
-          "\n" "\n" OBLIGATORY_analpaper_SOFTWARE_LICENSE
-          "\n" "\n" "                     Signed-off-by: Carles Tubio"
-          "\n"      "see: github.com/ctubio/Krypto-trading-bot#unlock"
-          "\n"      "or just use --free-version to hide this message"
-        );
-      };
+      
       function<void(const string&, const string&, const string&)> printer;
     protected:
       void print(const string &reason, const string &highlight = "") const {
