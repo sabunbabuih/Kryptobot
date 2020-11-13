@@ -269,7 +269,7 @@ namespace ₿ {
       string exchange,   apikey,    secret, pass,
              base,       quote,     symbol,
              http,       ws,        fix,
-             webMarket,  webOrders;
+             webMarket,  webOrders, unlock;
        Price tickPrice = 0;
       Amount tickSize  = 0,
              minSize   = 0,
