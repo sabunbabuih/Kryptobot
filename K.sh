@@ -55,7 +55,7 @@ UI_OPENPORT=3000
 #API_EXCHANGE=BITMEX
 #API_EXCHANGE=KRAKEN
 #API_EXCHANGE=POLONIEX
-API_EXCHANGE=BITFINEX_MARGIN
+API_EXCHANGE=BITFINEX
 #  ▌____________________________________________________.
 #  █ API_CURRENCY                                       .
 #  ██ - Allows any existent currency pair (see the website of the exchange), the format must be "AAA/ZZZ".
